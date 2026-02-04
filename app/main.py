@@ -6,7 +6,7 @@ app = FastAPI()
 @app.get("/hello")
 def read_hello():
     version = os.getenv("APP_VERSION", "unknown")
-    return {"message": f"Hello from version {version}"}
+    return {"message": f"Hello, user! from version {version}"}
 
 @app.get("/health")
 def health_check():
